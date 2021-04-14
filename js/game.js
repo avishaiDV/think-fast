@@ -52,7 +52,7 @@ function isFalse() {
     counter.innerText = count;
     document.title = "חשוב מהר| ניקוד: " + counter.innerText;
   } else {
-    window.location.pathname = "https://avishaidv.github.io/think-fast/";
+    window.location.pathname = "/think-fast/";
   }
 }
 options.addEventListener("click", (e) => {
