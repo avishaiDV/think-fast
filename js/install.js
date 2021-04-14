@@ -19,5 +19,5 @@ if ("serviceWorker" in navigator) {
 const startBtn = document.querySelector("#start");
 
 startBtn.addEventListener("click", () => {
-  window.location.pathname = "./pages/game.html";
+  window.location.pathname = "./think-fast/pages/game.html";
 });
