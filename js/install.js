@@ -1,6 +1,6 @@
 if ("serviceWorker" in navigator) {
   window.addEventListener("load", function () {
-    navigator.serviceWorker.register("/sw.js").then(
+    navigator.serviceWorker.register("./sw.js").then(
       function (registration) {
         // Registration was successful
         console.log(
@@ -19,5 +19,5 @@ if ("serviceWorker" in navigator) {
 const startBtn = document.querySelector("#start");
 
 startBtn.addEventListener("click", () => {
-  window.location.pathname = "/think-fast/pages/game.html";
+  window.location.pathname = "./pages/game.html";
 });
