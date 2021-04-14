@@ -15,7 +15,7 @@ body {
 
 body::before {
   content: "";
-  background-image: url("think-fast/images/bg.png");
+  background-image: url("https://avishaidv.github.io/think-fast/images/bg.png");
   background-repeat: repeat-x repeat-x;
   background-size: 50px;
   position: absolute;
