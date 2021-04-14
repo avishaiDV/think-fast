@@ -1,0 +1,50 @@
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
+@import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
+
+body {
+  font-family: "open sans hebrew";
+  overscroll-behavior-y: contain;
+  direction: rtl;
+  overflow: hidden;
+}
+
+::selection {
+  color: rgb(238, 238, 238);
+  background: rgb(180, 180, 180);
+}
+
+body::before {
+  content: "";
+  background-image: url("/images/bg.png");
+  background-repeat: repeat-x repeat-x;
+  background-size: 50px;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.1;
+  animation: bg 1s cubic-bezier(0.73, 0.13, 0.01, 0.98);
+}
+
+@keyframes bg {
+  0% {
+    opacity: 0.2;
+    transform: scale(1.5, 1.5);
+  }
+  100% {
+    opacity: 0.1;
+
+    transform: scale(1, 1);
+  }
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}

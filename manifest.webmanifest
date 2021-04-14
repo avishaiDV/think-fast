@@ -1,0 +1,15 @@
+{
+  "background_color": "purple",
+  "description": "משחק חשיבה מהירה, ענו מהר על השאלות; שימו לב לא להתבלבל בתשובות!",
+  "display": "fullscreen",
+  "icons": [
+    {
+      "src": "images/icon.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ],
+  "name": "משחק חשיבה מהירה",
+  "short_name": "תחשוב מהר",
+  "start_url": "pages/game.html"
+}
