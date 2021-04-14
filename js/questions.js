@@ -504,7 +504,7 @@ const questions = [
     true: "option1",
   },
   {
-    q: "18:00",
+    q: "17:00",
     ans1: "🕘",
     ans2: "🕠",
     true: "option2",
