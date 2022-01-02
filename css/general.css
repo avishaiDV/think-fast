@@ -1,8 +1,12 @@
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrew.css);
 @import url(https://fonts.googleapis.com/earlyaccess/opensanshebrewcondensed.css);
 
+*{
+  font-family: "Open Sans Hebrew";
+}
+
 body {
-  font-family: "open sans hebrew";
+  font-family: "Open Sans Hebrew";
   overscroll-behavior-y: contain;
   direction: rtl;
   overflow: hidden;
@@ -15,7 +19,7 @@ body {
 
 body::before {
   content: "";
-  background-image: url("https://avishaidv.github.io/think-fast/images/bg.png");
+  background-image: url("/images/bg.png");
   background-repeat: repeat-x repeat-x;
   background-size: 50px;
   position: absolute;

@@ -37,23 +37,28 @@ function ifTrue() {
   document.title = "חשוב מהר| ניקוד: " + counter.innerText;
 }
 
+
+
 function isFalse() {
   clearTimeout(myVar);
 
-  if (
-    confirm(
-      "Game Over! your score is: " +
-        counter.innerText +
-        ". do you want to play again?"
-    )
-  ) {
-    ifTrue();
-    count = 0;
-    counter.innerText = count;
-    document.title = "חשוב מהר| ניקוד: " + counter.innerText;
-  } else {
-    window.location.pathname = "/think-fast/";
-  }
+  Swal.fire({
+    title: 'המשחק נגמר!\nהתוצאה שלך היא: ' + counter.innerText + "\nתרצה לשחק שוב?",
+    showCancelButton: true,
+    confirmButtonText: 'כן! 🤩',
+    cancelButtonText: 'לא, נמאס לי 😞',
+  }).then((result) => {
+    console.log(result);
+    if (result.isConfirmed) {
+      ifTrue();
+      count = 0;
+      counter.innerText = count;
+      document.title = "חשוב מהר| ניקוד: " + counter.innerText;
+  
+    } else if (result.isDismissed) {
+      window.location.pathname = "/index.html";
+    }
+  })
 }
 options.addEventListener("click", (e) => {
   if (e.target.id == q[randomnumber].true && e.target.value != null) {

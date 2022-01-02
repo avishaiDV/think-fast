@@ -8,7 +8,6 @@
   text-shadow: 0px 0px 3px rgb(163, 163, 163);
   background-color: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(3px);
-
   border-radius: 15px;
   /* height: 60%; */
   box-shadow: 0px 0px 10px rgb(212, 212, 212);
@@ -26,7 +25,7 @@
   background-color: #eee;
   border-radius: 10px;
   height: 100px;
-  width: 300px;
+  /* width: 300px; */
   box-shadow: 0px 0px 10px rgb(212, 212, 212);
 }
 

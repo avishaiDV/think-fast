@@ -9,9 +9,10 @@
 
 button {
   cursor: pointer;
-
   font-size: 15px;
-  padding: 7px;
+  padding: 10px;
+  font-weight: bold;
+  font-family: "Open Sans Hebrew";
   border-radius: 20px;
   outline: none;
   border: none;

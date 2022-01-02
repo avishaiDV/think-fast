@@ -1,0 +1,87 @@
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.cardsContainer {
+    border-radius: 20px;
+    width: 350px;
+    height: auto;
+    background-color: rgba(121, 121, 121, 0.3);
+    backdrop-filter: blur(5px);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    animation: slideIn 0.6s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translate(-50%, -50%) scale(0.5);
+    }
+    to {
+        transform: translate(-50%, -50%)scale(1);
+    }
+    
+}
+
+.card
+{
+    cursor: pointer;
+    border-radius: 20px;
+    width: 300px;
+    height: 100px;
+    background-color: white;
+    text-align: center;
+    margin: 10px;
+    transition: all 0.5s ease;
+    box-shadow: 0px 0px 10px rgb(180, 180, 180);
+    background-position: right top;
+
+}
+
+.classic {
+    background-image: url("../images/classic.png");
+    background-size: 300px;
+}
+
+.flippedWords {
+    background-image: url("../images/flippedWords.png");
+    background-size: 300px;
+}
+.english {
+    background-image: url("../images/english.png");
+    background-size: 300px;
+}
+
+.card:hover{
+    transform: scale(0.95);
+    box-shadow: 0px 0px 12px rgb(163, 163, 163);
+    background-position:  center;
+
+}
+
+.card:active {
+    transform: scale(0.8);
+    box-shadow: 0px 0px 15px rgb(126, 126, 126);
+    background-position:  bottom;
+
+}
+
+
+.card h1
+{
+    text-shadow: 0px 0px 10px rgb(179, 179, 179);
+    margin-top: 25px;
+    font-size: 30px;
+    font-weight: bold;
+}
