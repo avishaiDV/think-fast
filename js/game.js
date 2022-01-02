@@ -56,7 +56,7 @@ function isFalse() {
       document.title = "חשוב מהר| ניקוד: " + counter.innerText;
   
     } else if (result.isDismissed) {
-      window.location.pathname = "/index.html";
+      window.location.pathname = "/think-fast/";
     }
   })
 }
