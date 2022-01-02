@@ -19,7 +19,7 @@ body {
 
 body::before {
   content: "";
-  background-image: url("./images/bg.png");
+  background-image: url("../images/bg.png");
   background-repeat: repeat-x repeat-x;
   background-size: 50px;
   position: absolute;
