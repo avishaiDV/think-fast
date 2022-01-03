@@ -156,12 +156,6 @@ const questions = [
         true: "option2",
       },
       {
-        q: "מתרוס",
-        ans1: "תמרוס",
-        ans2: "תרמוס",
-        true: "option1",
-      },
-      {
         q: "מרטה",
         ans1: "מטרה",
         ans2: "תמרה",
