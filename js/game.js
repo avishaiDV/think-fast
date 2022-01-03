@@ -8,6 +8,7 @@ const options = document.querySelector(".options");
 let randomnumber = Math.floor(Math.random() * q.length);
 let temp = randomnumber;
 const slider = document.querySelector("#timeSlider");
+var timer = 1500;
 
 counter.innerText = count;
 ans1.innerText = q[randomnumber].ans1;
@@ -68,6 +69,6 @@ options.addEventListener("click", (e) => {
   }
 });
 function myTimer() {
-  myVar = setTimeout(isFalse, 1500);
+  myVar = setTimeout(isFalse, timer);
 }
 myTimer();
